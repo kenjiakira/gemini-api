@@ -3,7 +3,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = 9999;
 
 const API_KEYS = [
     'AIzaSyDfyni3DAsiDasXwzpPCuvnYFNsC5H2kTw',
@@ -121,3 +121,4 @@ app.post('/generate', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}/home.html`);
 });
+module.exports = app;
