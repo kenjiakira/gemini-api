@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #2c2f38;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.menu a {
+    color: #bbb;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover, .menu .active {
+    background-color: #444;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #1a1a1a;
+    height: 100%;
+    overflow-y: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #f0f0f0;
+}
+
+header p {
+    font-size: 18px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #bbb;
+    line-height: 1.8;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+.features h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 18px;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.features li i {
+    margin-right: 10px;
+    color: #f0f0f0;
+}
+
+.team {
+    margin-bottom: 40px;
+}
+
+.team h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.contact h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.contact a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        gap: 10px;
+    }
+
+    .menu a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .intro h2, .features h2, .team h2, .contact h2 {
+        font-size: 24px;
+    }
+
+    .intro p, .features li, .member-info p, .contact p {
+        font-size: 14px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+body, .chat-box {
+    overflow-y: auto;
+}
+.menu-link i {
+    margin-right: 8px; 
+    font-size: 18px;   
+}
+

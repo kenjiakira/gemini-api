@@ -1,0 +1,32 @@
+{
+    "suggestions": [
+      {
+        "label": "Dạy tôi",
+        "icon": "fas fa-graduation-cap",  
+        "messages": [
+          "Dạy tôi cách lập trình JavaScript.",
+          "Dạy tôi cách sử dụng Node.js.",
+          "Dạy tôi về các cấu trúc dữ liệu trong JavaScript."
+        ]
+      },
+      {
+        "label": "Code",
+        "icon": "fas fa-code", 
+        "messages": [
+          "Code một chương trình đơn giản.",
+          "Code một trang web tĩnh với HTML/CSS.",
+          "Code một API đơn giản với Express.js."
+        ]
+      },
+      {
+        "label": "Bạn có thể...",
+        "icon": "fas fa-question-circle", 
+        "messages": [
+          "Bạn có thể làm gì cho tôi?",
+          "Bạn có thể giúp tôi giải quyết bài toán này không?",
+          "Bạn có thể chỉ cho tôi cách sử dụng AI không?"
+        ]
+      }
+    ]
+  }
+  
