@@ -1,0 +1,7 @@
+# web: specifies the web server configuration
+web:
+  # rewrites: defines rewrite rules for incoming requests
+  rewrites:
+    # all paths except `/generate` (your API endpoint) should be rewritten to serve `home.html`
+    - source: /^(?!\/generate).*$
+      destination: /frontend/home.html
